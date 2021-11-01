@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: #ccc;
+            padding:20px;
+            display: grid;
+            grid-template-areas: 'h h h h h h'
+            '. m m  m s .' '. a a b b .' 
+            'f f f f f f';
+        }
+        .box{
+            border:2px solid #fff;
+            padding:40px;
+        }
+        .header{
+            grid-area: h;
+            background: lightblue;
+        }
+        .maincontent{
+            grid-area: m;
+            background: green;
+        }
+        .siderbar{
+            grid-area: s;
+            background: purple;
+        }
+        .twin{
+            grid-area: a;
+            background: orange;
+        }
+        .twins{
+            grid-area: b;
+            background: orange;
+        }
+        .footer{
+            grid-area: f;
+            background: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header box">Header</div>
+        <div class="maincontent box">Main content</div>
+        <div class="siderbar box">sidebar</div>
+        <div class="twin a box">twin</div>
+        <div class="twins b box">twin</div>
+        <div class="footer box">footer</div>
+    </div>
+</body>
+</html>

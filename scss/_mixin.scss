@@ -1,0 +1,8 @@
+@mixin d-flex($fd,$js,$ai) {
+    width: 1200px;
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $js;
+    align-items: $ai;
+    margin: 0 auto;
+}

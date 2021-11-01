@@ -1,0 +1,129 @@
+@import 'mixin';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+}
+nav{
+    width: 100%;
+    padding:20px;
+    @include d-flex(row,space-between,center);
+    .logo{
+        img{
+            width: 35%;
+        }
+    }
+    .navbar{
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    padding:10px;
+                    &:hover{
+                        color: #f76413;
+                        border: 1px solid #f76413;
+                    }
+                }
+            }
+        }
+    }
+    .fa-facebook-square{
+        color: #4267B2;
+        font-size: 30px;
+    }
+    .fa-twitter-square{
+        color: #1DA1F2;
+        font-size: 30px;
+    }
+}
+.slider{
+    width: 100%;
+}
+.banner2{
+    @include d-flex(row,center,stretch);
+    &__left{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #1BA1E2;
+        width: 100%;
+        color: #fff;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #204385;
+        color: white;
+        width: 100%;
+        button{
+            padding:20px;
+            margin-left: 10px;
+            border: 0;
+        }
+    }
+
+}
+.slider2{
+    &__box{
+        padding: 20px;
+        img{
+            width: 100%;
+        };
+        p{
+            padding:5px;
+            text-align: center;
+        }
+    }
+}
+.contact{
+    @include d-flex(column,center,center);
+    color: #fff;
+    &__box1{
+        @include d-flex(row,center,center);
+        background: #0CA97C;
+        div{
+            flex-basis: 50%;
+            text-align: center;
+            padding: 20px;
+            &:nth-of-type(2){
+                white-space: pre;
+             border-left: 1px solid  #0B936D;
+            }
+        }
+    }
+    &__box2{
+        @include d-flex(row,center,center);
+        background: #204385;
+        div{
+            flex-basis: 50%;
+            padding: 20px;
+            &:nth-of-type(2){
+                white-space: pre;
+                border-left: 1px solid #333842;
+            }
+        }
+    }
+    &__box3{
+        width: 100%;
+        background: #1BA1E2;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+footer{
+    background: #efefef;
+    .wrapper{
+        @include d-flex(row,space-between,center);
+        padding: 20px;
+    }
+}
